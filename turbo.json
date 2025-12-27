@@ -6,6 +6,10 @@
     },
     "start:dev": {
       "cache": false
+    },
+    "start:prod": {
+      "dependsOn": ["build"],
+      "cache": false
     }
   }
 }
