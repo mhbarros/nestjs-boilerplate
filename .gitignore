@@ -2,3 +2,5 @@
 .vscode/
 .turbo/
 node_modules/
+
+src/instrument.ts
