@@ -1,4 +1,5 @@
 import * as Sentry from '@sentry/nestjs'
+import packageJson from 'package.json'
 
 process.loadEnvFile()
 
@@ -7,5 +8,5 @@ Sentry.init({
   // Setting this option to true will send default PII data to Sentry.
   // For example, automatic IP address collection on events
   sendDefaultPii: true,
-  release: '1.0.0',
+  release: packageJson.version,
 })
